@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ServerStatusUpdater" GeneratedClassName="ServerOpt">
+  <Profiles />
+  <Settings>
+    <Setting Name="server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">teraintranet</Value>
+    </Setting>
+    <Setting Name="serverip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="sercurityKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0bacf71935dd3589a2c529d1cdaba6d0b80a82d673730fe752001f06a509a8ff</Value>
+    </Setting>
+    <Setting Name="informerPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">23232</Value>
+    </Setting>
+    <Setting Name="webApiUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://127.0.0.1/tera/update_ss.php</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

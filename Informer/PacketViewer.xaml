@@ -1,0 +1,15 @@
+﻿<Window x:Class="Informer.PacketViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Packet Viewer" Height="523" Width="839">
+    <DockPanel>
+        
+        <ListBox Name="PacketsListBox" ItemsSource="{Binding}" DockPanel.Dock="Left" Width="240" Margin="5 5 0 5" />
+        
+        <DockPanel>
+            <RichTextBox Name="CallStackTextBox" DockPanel.Dock="Bottom" Height="200" Margin="5" />
+            <RichTextBox Name="HexTextBox" Margin="5 5 5 0" />
+        </DockPanel>
+        
+    </DockPanel>
+</Window>

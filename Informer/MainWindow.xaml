@@ -1,0 +1,32 @@
+﻿<Window x:Class="Informer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Informer" Height="388" Width="615">
+    
+    <Window.Resources>
+        <Style TargetType="Paragraph">
+            <Setter Property="Margin" Value="0" />
+        </Style>
+    </Window.Resources>
+    
+    <DockPanel>
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Left">    
+            <Label Content="Connect to server:" />
+            <DockPanel Margin="5">
+                <Button Content="Connect" Margin="5 0 0 0" Padding="10 2 10 2" Click="Connect" DockPanel.Dock="Right" />
+                <TextBox Text="127.0.0.1" Name="ServerIp" Width="120" VerticalContentAlignment="Center" />
+            </DockPanel>
+            
+            <Button Content="Get Online List" Margin="5 15 5 5" Padding="10 2 10 2" Click="GetOnlineList" />
+
+            <DockPanel Margin="5">
+                <Button Content="Watch Acc" Margin="5 0 0 0" Padding="10 2 10 2" Click="Watch" DockPanel.Dock="Right" />
+                <TextBox Text="" Name="AccountName" VerticalContentAlignment="Center" />
+            </DockPanel>
+            
+            <Button Content="Shutdown server" Margin="5 15 5 5" Padding="10 2 10 2" Click="SutdownServer" />
+        </StackPanel>
+        
+        <RichTextBox Name="LogTextBox" Margin="5" VerticalScrollBarVisibility="Visible" />
+    </DockPanel>
+</Window>
